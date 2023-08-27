@@ -1,0 +1,284 @@
+:root {
+    --color-dark: #5c8d89;
+    --color-primary: #74b49b;
+    --color-secondary:  #a7d7c5;
+    --color-highlight: #f4f9f4; 
+    --color-lightGrey: #b6b6b6; 
+
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sideBar {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: var(--color-dark);
+}
+
+
+
+.sideGrid {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    justify-items: left;
+    align-items: center;
+    gap: 10px;
+    margin-top:20px;
+}
+
+.sideGrid .logo{
+    width: 25px;
+    justify-self: center;
+}
+
+.sideGrid .gap {
+    height: 50px;
+}
+
+.sideGrid .egg{
+    width:40px;
+    justify-self: center;
+}
+
+.sideGrid h3 {
+    margin:0;
+}
+
+.sideGrid h1 {
+    margin:0;
+}
+
+
+
+
+.nav {
+     grid-column: 2/3;
+     grid-row: 1/2;
+     background-color: var(--color-highlight);
+
+     display:grid;
+     grid-template-columns: 3fr 1fr;
+     grid-template-rows: auto auto;
+     align-items: center;
+     padding: 20px;
+     box-shadow: 0 4px 8px -2px rgb(151, 151, 151);
+     position: relative;
+
+
+}
+
+.nav .search-container {
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+    
+.nav .search #btn {
+    
+        background-color: var(--color-highlight);
+        border: none;
+        color: var(--color-lightGrey);
+        font-size: 16px;
+        cursor: pointer;
+
+}
+
+
+
+.nav .search input[type='text'] {
+    background-color: var(--color-lightGrey);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    flex: 1;
+    font-size: 0.8rem;
+
+  }
+
+  .nav .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block
+  }
+
+  .nav #bell {
+    background-color: var(--color-highlight);
+        border: none;
+        color: var(--color-lightGrey);
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block
+
+  }
+
+.nav .settings {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.nav .settings h3 {
+    color: var(--color-lightGrey);
+}
+
+
+
+.nav .profile {
+    display:grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+.nav .profile .welcome-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.nav .profile h3 {
+    color: var(--color-lightGrey);
+    align-self: start;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav .profile p {
+    color: var(--color-lightGrey);
+    align-self: end;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.nav .buts {
+    display:flex;
+    gap: 10px;
+
+}
+
+.nav .btn {
+    background-color: var(--color-lightGrey);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+    
+}
+
+
+
+
+
+
+.window {
+grid-column: 2/3;
+grid-row: 2/3;
+background-color: var(--color-secondary);
+
+display:grid;
+grid-template-columns: 5fr 2fr;
+grid-template-rows: 40px 1fr;
+padding-top:10px;
+
+}
+
+.window div {
+    
+      
+    
+}
+
+.window h3 {
+    margin: 0;
+    padding: 0;
+    align-self: end;
+    justify-self: start;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.window .boards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap:20px;
+    margin-left: 20px;
+
+}
+
+
+.window .board {
+    background-color: var(--color-highlight);
+    border-radius: 10px;
+    height: auto;
+    padding: 20px;
+    padding-left: 30px;
+
+}
+
+.window .controls {
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-end;
+
+
+}
+
+.window .controls #ctrl {
+    background-color: var(--color-highlight);
+    border: none;
+    color: var(--color-lightGrey);
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block
+
+}
+
+
+.window .board p {
+    color: black;
+}
+
+.window .other {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    justify-content: flex-start;
+    margin-right: 20px;
+
+}
+
+.window .other h3 {
+    text-align:left;
+}
+
